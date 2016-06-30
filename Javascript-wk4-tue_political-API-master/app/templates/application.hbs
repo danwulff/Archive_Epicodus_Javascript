@@ -1,0 +1,29 @@
+<nav>
+  <div class="nav-wrapper" style="background-color: #26a69a; padding-left: 20px">
+    <a href="#" class="brand-logo"><i class="material-icons">mode_edit</i></a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-red-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div></li>
+      <li><a href="/"><i class="material-icons left">stay_current_portrait</i>Index</a></li>
+      <li><a href="/resultscommittees"><i class="material-icons left">voicemail</i>Committess</a></li>
+      <li><a href="/bills"><i class="material-icons left">grade</i>Bills</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  {{outlet}}
+</div>
+
+
+{{!-- ember-cli-materialize modal container --}}
+{{md-modal-container}}

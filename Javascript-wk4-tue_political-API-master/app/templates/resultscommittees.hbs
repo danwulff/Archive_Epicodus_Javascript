@@ -1,0 +1,8 @@
+<h2>Committees!</h2><br>
+
+{{#each model as |committee|}}
+  <h4>{{#link-to 'subcommittees' committee.committee_id}} {{committee.name}} {{/link-to}}</h4>
+  <p>
+    Chamber: {{committee.chamber}}, Id: {{committee.committee_id}}
+  </p><br>
+{{/each}}

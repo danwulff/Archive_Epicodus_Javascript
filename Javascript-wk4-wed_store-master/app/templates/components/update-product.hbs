@@ -1,0 +1,32 @@
+
+{{#if updateForm}}
+  <form class="admin">
+    <label for="newTitle">new Title</label>
+    {{input value=product.title id="newTitle"}}<br>
+
+    <label for="newBrand">new Brand</label>
+    {{input value=product.brand id="newBrand"}}<br>
+
+    <label for="newPrice">new Price</label>
+    {{input value=product.price id="newPrice"}}<br>
+
+    <label for="newSale">new Sale</label>
+    {{input value=product.sale id="newSale"}}<br>
+
+    <label for="newDescription">new Description</label>
+    {{input value=product.description id="newDescription"}}<br>
+
+    <label for="newImage">new Image</label>
+    {{input value=product.image id="newImage"}}<br>
+
+    <label for="newCategory">new Category</label>
+    {{input value=product.category id="newCategory"}}<br>
+
+    <button type="button" {{action "update" product}}>Save</button>
+  </form>
+
+{{else}}
+  <button type="button" {{action "updateForm"}}>Update</button>
+{{/if}}
+
+<button type="button" {{action "delete" product}}>Delete</button>

@@ -1,0 +1,24 @@
+
+<div class="row">
+  <h1 style="text-align: center">JetSmart Store!</h1>
+</div>
+
+
+<div class="row">
+  <div class="col-xs-2 sidebar">
+    <h5>Future links:</h5>
+    <ul>
+      <li>stuff</li>
+      <li>stuff</li>
+      <li>stuff</li>
+    </ul>
+  </div>
+
+  <div class="col-xs-10 main-content">
+    <div class="row">
+      {{#each model as |product|}}
+        {{product-display product=product}}
+      {{/each}}
+    </div>
+  </div>
+</div>

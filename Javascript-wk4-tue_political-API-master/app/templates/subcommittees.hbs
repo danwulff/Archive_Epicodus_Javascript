@@ -1,0 +1,26 @@
+{{#if model}}
+  <h2>Subcommittees!</h2><br>
+
+  {{#each model as |subcommittee|}}
+    <h4>{{subcommittee.name}}</h4>
+    <p>
+      {{subcommittee.chamber}}
+    </p>
+  {{/each}}
+{{else}}
+  <h1>No subcommittees for this committee</h1>
+{{/if}}
+
+<a href="/resultscommittees">
+  <div class="preloader-wrapper big active">
+    <div class="spinner-layer spinner-red-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+</a>

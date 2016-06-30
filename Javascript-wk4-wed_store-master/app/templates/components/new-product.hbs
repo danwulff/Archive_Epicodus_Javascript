@@ -1,0 +1,25 @@
+
+<form class="admin">
+  <label for="title">title</label>
+  {{input value=title id="title"}}<br>
+
+  <label for="brand">brand</label>
+  {{input value=brand id="brand"}}<br>
+
+  <label for="price">price</label>
+  {{input value=price id="price"}}<br>
+
+  <label for="sale">% Off</label>
+  {{input value=sale id="sale"}}<br>
+
+  <label for="description">description</label>
+  {{input value=description id="description"}}<br>
+
+  <label for="image">image URL</label>
+  {{input value=image id="image"}}<br>
+
+  <label for="category">category</label>
+  {{input value=category id="category"}}<br>
+
+  <button type="button" name="button" {{action 'saveObject'}}>Save</button>
+</form>

@@ -1,0 +1,27 @@
+<!-- <h5>{{bill.official_title}}</h5>
+{{#if details}}
+    <h5>Sponsor: {{bill.sponsor.first_name}} {{bill.sponsor.last_name}}</h5>
+    <h5>Bill Introduced on: {{bill.introduced_on}}</h5>
+    <h5>Link To Bill: <a href={{bill.urls.govtrack}}>{{bill.bill_id}}</a></h5>
+  <br>
+  <button {{action "hideDetails"}}>Hide Info</button>
+{{else}}
+  <button {{action "showDetails"}}>Show Info</button>
+{{/if}} -->
+
+
+
+
+
+
+<div class="card" style="height: 300px">
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Bill: {{bill.bill_id}}<i class="material-icons right">more_vert</i></span>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">{{bill.official_title}}<i class="material-icons right">close</i></span>
+      <h5>Sponsor: {{bill.sponsor.first_name}} {{bill.sponsor.last_name}}</h5>
+      <h5>Bill Introduced on: {{bill.introduced_on}}</h5>
+      <h5>Link To Bill: <a href={{bill.urls.govtrack}}>{{bill.bill_id}}</a></h5>
+    </div>
+  </div>

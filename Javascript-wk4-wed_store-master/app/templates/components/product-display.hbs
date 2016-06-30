@@ -1,0 +1,12 @@
+<div class="col-xs-4 tiles">
+  <img src={{product.image}}/>
+  {{#if product.sale}}
+    <h4 class="{{if product.sale 'saleClass'}}">{{ product.title }} - {{product.sale}}% Off!</h4>
+  {{else}}
+    <h4>{{ product.title }}</h4>
+  {{/if}}
+  <p>{{ product.brand }}</p>
+  <p>{{ product.description }}</p>
+  <p>$ {{ product.price }}</p>
+  <button {{action 'addToCart' product}}>Add to Cart</button>
+</div>

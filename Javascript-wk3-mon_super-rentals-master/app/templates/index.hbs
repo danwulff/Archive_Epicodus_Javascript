@@ -1,0 +1,19 @@
+<div class="container">
+
+  <h1> Welcome to Super Rentals </h1>
+
+  <h3>{{#link-to 'announcements'}}Check out these announcements{{/link-to}}</h3>
+
+
+  We hope you find exactly what you're looking for in a place to stay.
+
+  <ul>
+    {{#each model as |rental|}}
+      {{rental-tile rental=rental}}
+    {{/each}}
+  </ul><br>
+
+  {{new-rental save2="save3"}}<br>
+
+
+</div>

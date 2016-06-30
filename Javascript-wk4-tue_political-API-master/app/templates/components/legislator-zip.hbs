@@ -1,0 +1,11 @@
+<div class="col s4">
+
+  <form class="input-field">
+
+    {{input value=zip id="zip" type="number" class="validate"}}
+    <label for="zip" data-error="wrong" data-success="it's a number!">Zip Code</label>
+    <br><br>
+    <button class="btn waves-effect waves-purple" {{action "zipSearch"}} type="submit">Submit</button>
+  </form>
+
+</div>

@@ -1,0 +1,12 @@
+<br>
+{{#if model}}
+  <ul class="collection">
+    {{#each model as |legislator|}}
+      <li class="collection-item"> {{legislator.first_name}} {{legislator.last_name}}: {{legislator.chamber}} - {{legislator.party}}<br>Contact: <a href={{legislator.contact_form}}><i class="material-icons">contacts</i> {{legislator.contact_form}}</a></li>
+      <br>
+    {{/each}}
+  </ul>
+{{else}}
+  <h2>That area code doesn't exist</h2>
+  {{#link-to "index"}}go back{{/link-to}}
+{{/if}}
